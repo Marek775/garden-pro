@@ -323,6 +323,30 @@
 .gp-benefits-v2 .gp-benefit-grid p{font-size:clamp(9px,2.4vw,11px)!important;line-height:1.18!important}
 .gp-benefits-v2 .gp-benefits-disclaimer{font-size:9px!important;margin:14px auto 0!important}
 }
+
+/* 8.16 approved 3-step mobile layout: reduced whitespace, compact cards and arrows */
+.gp-how{padding:32px 5% 38px!important;text-align:center!important}
+.gp-how>h2{font-size:clamp(28px,4vw,42px)!important;font-style:italic!important;font-weight:900!important;line-height:1.08!important;margin:0 0 9px!important}
+.gp-how>p{font-size:clamp(13px,1.6vw,17px)!important;line-height:1.3!important;margin:0 auto 19px!important;max-width:520px}
+.gp-how .gp-steps{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;max-width:960px;margin:0 auto!important}
+.gp-how .gp-steps article{position:relative!important;background:#fff!important;border-radius:17px!important;padding:16px 10px 15px!important;min-height:0!important}
+.gp-how .gp-steps article img{width:82px!important;height:82px!important;object-fit:cover!important;border-radius:50%!important;margin:0 auto 8px!important;display:block!important}
+.gp-how .gp-steps article b{position:absolute!important;top:8px!important;left:calc(50% + 20px)!important;width:28px!important;height:28px!important;font-size:15px!important}
+.gp-how .gp-steps article h3{font-size:16px!important;line-height:1.15!important;margin:0 0 5px!important}
+.gp-how .gp-steps article p{font-size:12px!important;line-height:1.25!important;margin:0!important}
+.gp-how .gp-steps article:not(:last-child)::after{content:'›';position:absolute;z-index:5;right:-16px;top:42%;font-size:30px;line-height:1;color:#141414;font-weight:400}
+@media(max-width:700px){
+.gp-how{padding:24px 4% 27px!important}
+.gp-how>h2{font-size:clamp(25px,6vw,31px)!important;margin:0 0 7px!important}
+.gp-how>p{font-size:clamp(11px,3vw,13px)!important;margin:0 auto 16px!important}
+.gp-how .gp-steps{gap:14px!important}
+.gp-how .gp-steps article{padding:12px 4px 12px!important;border-radius:14px!important}
+.gp-how .gp-steps article img{width:clamp(52px,17vw,75px)!important;height:clamp(52px,17vw,75px)!important;margin-bottom:7px!important}
+.gp-how .gp-steps article b{top:6px!important;left:calc(50% + 13px)!important;width:23px!important;height:23px!important;font-size:13px!important}
+.gp-how .gp-steps article h3{font-size:clamp(11px,2.8vw,13px)!important;margin-bottom:5px!important}
+.gp-how .gp-steps article p{font-size:clamp(9px,2.3vw,11px)!important;line-height:1.2!important}
+.gp-how .gp-steps article:not(:last-child)::after{right:-13px!important;top:40%!important;font-size:24px!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
