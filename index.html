@@ -239,6 +239,17 @@
 .gp-tech-v2 .gp-callout-icon{width:68px!important;height:68px!important}
 .gp-tech-v2 .gp-connector{margin-top:4px!important}
 }
+
+/* 8.8 measured SVG annotations: connect actual detail thumbnails to image anchors */
+.gp-tech-v2 .gp-tech-stage{isolation:isolate}
+.gp-tech-v2 .gp-tech-guides{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;pointer-events:none!important;overflow:visible!important;z-index:3!important}
+@media(max-width:700px){
+.gp-tech-v2 .gp-tech-guides{display:block!important}
+.gp-tech-v2 .gp-callout{z-index:4!important}
+.gp-tech-v2 .gp-tech-device{z-index:1!important}
+.gp-tech-v2 .gp-nozzles:after,.gp-tech-v2 .gp-regulation:after,.gp-tech-v2 .gp-base:after,.gp-tech-v2 .gp-material:after,.gp-tech-v2 .gp-connector:after{display:none!important}
+.gp-tech-v2 .gp-tech-device:before,.gp-tech-v2 .gp-tech-device:after{display:none!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
@@ -246,13 +257,7 @@
 <div class="gp-trust"><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h17v17H3zM20 13h5l4 5v6h-9M3 24h3m14 0h2"/><circle cx="10" cy="24" r="3"/><circle cx="25" cy="24" r="3"/><path d="M1 12h9M1 16h6"/></svg></span><b>Szybka dostawa</b><small>1–2 dni robocze*</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 29 9v14l-13 7L3 23V9zM3 9l13 7 13-7M16 16v14M10 5l13 8"/></svg></span><b>14 dni</b><small>na zwrot</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 28 7v9c0 8-5 12-12 15C9 28 4 24 4 16V7z"/><path d="m10 16 4 4 8-9"/></svg></span><b>Bezpieczne</b><small>płatności</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="9"/><path d="m11 20-2 10 7-4 7 4-2-10m-9-8 3 3 5-6"/></svg></span><b>Gwarancja</b><small>jakości</small></div></div>
 <section class="gp-section gp-tech gp-tech-v2" id="technologia"><div class="gp-kicker">POZNAJ ZRASZACZ GARDEN PRO</div><h2>Przemyślana konstrukcja,<br><em>realne korzyści</em> dla Twojego ogrodu</h2>
 <div class="gp-tech-stage">
-<svg class="gp-tech-guides" viewBox="0 0 1000 900" preserveAspectRatio="none" aria-hidden="true">
-<g fill="none" stroke="#82dc0b" stroke-width="2.5" stroke-linecap="round">
-<path d="M255 248 L337 392"/><path d="M746 248 L792 482"/>
-<path d="M258 650 L330 538"/><path d="M744 650 L602 540"/>
-<path d="M500 806 L870 495"/>
-</g>
-<g fill="#fff" stroke="#79d709" stroke-width="5"><circle cx="337" cy="392" r="10"/><circle cx="792" cy="482" r="10"/><circle cx="330" cy="538" r="10"/><circle cx="602" cy="540" r="10"/><circle cx="870" cy="495" r="10"/></g></svg>
+<svg class="gp-tech-guides" aria-hidden="true" preserveAspectRatio="none"><g class="gp-guide-paths" fill="none" stroke="#80d90b" stroke-width="1.6" stroke-linecap="round"></g><g class="gp-guide-dots" fill="#fff" stroke="#80d90b" stroke-width="2.6"></g></svg>
 <div class="gp-tech-device"><img src="/assets/IMG_0680.webp" alt="Zraszacz GARDEN PRO — widok urządzenia" loading="lazy"></div>
 <div class="gp-callout gp-nozzles"><span class="gp-callout-icon"><img src="/assets/IMG_0687.webp" alt="" loading="lazy"></span><div><h3>Precyzyjne dysze</h3><p>Równomierny strumień na całej szerokości.</p></div></div>
 <div class="gp-callout gp-regulation"><span class="gp-callout-icon"><img src="/assets/IMG_0684.webp" alt="" loading="lazy"></span><div><h3>Regulacja zasięgu</h3><p>Dopasuj sposób podlewania do ogrodu.</p></div></div>
@@ -278,4 +283,52 @@ document.getElementById('featured')?.innerHTML=products.slice(0,3).map(p=>'<arti
 document.getElementById('moreProducts')?.innerHTML=products.slice(3).map(p=>'<article class="dark-card">'+imageMarkup(p)+'<div class="detail"><h3>'+p.name+'</h3><p>'+p.short+'</p><div class="foot"><strong class="price">'+money(p.price)+'</strong><button class="buy" aria-label="Dodaj do koszyka: '+p.name+'" onclick="add('+p.id+')">🛒 &nbsp; KUP TERAZ</button></div></div></article>').join('');
 document.getElementById('relatedProducts').innerHTML=products.filter(p=>p.id!==5).map(p=>'<button onclick="openProduct('+p.id+')">'+p.name+' →</button>').join('');function persist(){localStorage.setItem('gp-cart',JSON.stringify(cart));renderCart()}function add(id){cart[id]=(cart[id]||0)+1;persist();openCart()}function change(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];persist()}function renderCart(){const count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById('badge').textContent=count;document.getElementById('drawerTitle').textContent='Twój koszyk ('+count+')';let total=0;const rows=Object.entries(cart).map(([id,q])=>{const p=products.find(x=>x.id===+id);if(!p)return '';total+=p.price*q;return '<div class="cart-row"><div class="mini">❧</div><div class="cart-info"><b>'+p.name+'</b><small>'+money(p.price)+'</small><div class="qty"><button onclick="change('+id+',-1)">−</button><span>'+q+'</span><button onclick="change('+id+',1)">+</button></div></div><strong>'+money(p.price*q)+'</strong><button class="remove" onclick="change('+id+',-'+q+')" aria-label="Usuń">×</button></div>'}).join('');document.getElementById('cartItems').innerHTML=rows||'<p class="empty">Twój koszyk jest pusty.<br>Dodaj produkt, aby rozpocząć.</p>';document.getElementById('total').textContent=money(total);document.querySelector('#cartBottom .cta').disabled=count===0}function openCart(){document.getElementById('overlay').classList.add('open');document.getElementById('drawer').classList.add('open');document.body.style.overflow='hidden'}function closeCart(){document.getElementById('overlay').classList.remove('open');document.getElementById('drawer').classList.remove('open');document.body.style.overflow='';showCheckout(false)}function showCheckout(on){if(on&&!Object.keys(cart).length)return;document.getElementById('checkout').classList.toggle('show',on);document.getElementById('cartItems').style.display=on?'none':'block';document.getElementById('cartBottom').style.display=on?'none':'block'}function toggleMenu(){const m=document.getElementById('mobileNav');m.hidden=!m.hidden;m.setAttribute('aria-hidden',String(m.hidden))}let currentProduct=1,productQty=1;function openProduct(id){const p=products.find(x=>x.id===id);if(!p)return;currentProduct=id;productQty=1;document.getElementById('pvImage').innerHTML=imageMarkup(p);document.getElementById('pvName').textContent=p.name;document.getElementById('pvDescription').textContent=p.short;document.getElementById('pvPrice').textContent=money(p.price);document.getElementById('pvQty').textContent=1;selectVariant(0);document.getElementById('productView').classList.add('open');document.body.style.overflow='hidden';document.getElementById('productView').scrollTop=0}function closeProduct(){document.getElementById('productView').classList.remove('open');document.body.style.overflow=''}function productQtyChange(d){productQty=Math.max(1,Math.min(99,productQty+d));document.getElementById('pvQty').textContent=productQty}function selectVariant(i){document.querySelectorAll('.pv-variants button').forEach((b,j)=>b.classList.toggle('selected',i===j))}function addFromProduct(){cart[currentProduct]=(cart[currentProduct]||0)+productQty;persist();closeProduct();openCart()};renderCart();
 document.addEventListener('DOMContentLoaded',loadLocalPhotos);setTimeout(loadLocalPhotos,250);
-</script></body></html>
+</script><script>
+/* Technical annotation coordinates are derived from the rendered product image,
+   not from the total height of the section. ResizeObserver keeps them aligned. */
+(function(){
+ const stage=document.querySelector('.gp-tech-v2 .gp-tech-stage');
+ if(!stage)return;
+ const svg=stage.querySelector('.gp-tech-guides');
+ const lines=svg.querySelector('.gp-guide-paths'),dots=svg.querySelector('.gp-guide-dots');
+ const photo=stage.querySelector('.gp-tech-device img');
+ const ns='http://www.w3.org/2000/svg';
+ const specs=[
+  ['.gp-nozzles',.38,.37,'bottom'],
+  ['.gp-regulation',.79,.52,'bottom'],
+  ['.gp-base',.24,.75,'top'],
+  ['.gp-material',.60,.76,'top'],
+  ['.gp-connector',.89,.56,'right']
+ ];
+ function draw(){
+  if(!photo.complete||!photo.naturalWidth)return;
+  const b=stage.getBoundingClientRect(),p=photo.getBoundingClientRect();
+  if(!b.width||!b.height)return;
+  svg.setAttribute('viewBox','0 0 '+b.width+' '+b.height);
+  lines.replaceChildren();dots.replaceChildren();
+  const ratio=Math.min(p.width/photo.naturalWidth,p.height/photo.naturalHeight);
+  const iw=photo.naturalWidth*ratio,ih=photo.naturalHeight*ratio;
+  const x0=p.left-b.left+(p.width-iw)/2,y0=p.top-b.top+(p.height-ih)/2;
+  for(const [sel,rx,ry,side] of specs){
+   const el=stage.querySelector(sel+' .gp-callout-icon');if(!el)continue;
+   const r=el.getBoundingClientRect();
+   const cx=r.left-b.left+r.width/2,cy=r.top-b.top+r.height/2;
+   const x=x0+iw*rx,y=y0+ih*ry;
+   let sx=cx,sy=cy;
+   if(side==='bottom')sy=r.bottom-b.top;
+   if(side==='top')sy=r.top-b.top;
+   if(side==='right')sx=r.right-b.left;
+   const path=document.createElementNS(ns,'path');
+   // Connect to the nearest thumbnail edge, avoiding the callout's text.
+   path.setAttribute('d','M '+sx.toFixed(1)+' '+sy.toFixed(1)+' L '+x.toFixed(1)+' '+y.toFixed(1));
+   lines.appendChild(path);
+   const dot=document.createElementNS(ns,'circle');dot.setAttribute('cx',x);dot.setAttribute('cy',y);dot.setAttribute('r','4.5');dots.appendChild(dot);
+  }
+ }
+ photo.addEventListener('load',draw);
+ window.addEventListener('resize',draw,{passive:true});
+ if('ResizeObserver' in window)new ResizeObserver(draw).observe(stage);
+ requestAnimationFrame(draw);
+})();
+</script>
+</body></html>
