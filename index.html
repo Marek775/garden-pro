@@ -226,6 +226,19 @@
 .gp-tech-v2 .gp-base:after{right:5%!important;top:-10px!important;transform:rotate(-50deg)!important}
 .gp-tech-v2 .gp-material:after{left:5%!important;top:-10px!important;transform:rotate(50deg)!important}
 }
+
+/* 8.7: single responsive SVG annotation layer, no floating CSS line fragments */
+.gp-tech-v2 .gp-tech-guides{display:none}
+@media(max-width:700px){
+.gp-tech-v2 .gp-tech-stage{position:relative!important;row-gap:4px!important;column-gap:10px!important;grid-template-rows:auto auto auto auto!important}
+.gp-tech-v2 .gp-tech-guides{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:4!important;pointer-events:none!important;overflow:visible!important}
+.gp-tech-v2 .gp-nozzles:after,.gp-tech-v2 .gp-regulation:after,.gp-tech-v2 .gp-base:after,.gp-tech-v2 .gp-material:after{display:none!important}
+.gp-tech-v2 .gp-tech-device:before,.gp-tech-v2 .gp-tech-device:after{display:none!important}
+.gp-tech-v2 .gp-tech-device{height:clamp(155px,41vw,205px)!important;margin:-5px 0!important;z-index:1!important}
+.gp-tech-v2 .gp-callout{z-index:5!important}
+.gp-tech-v2 .gp-callout-icon{width:68px!important;height:68px!important}
+.gp-tech-v2 .gp-connector{margin-top:4px!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
@@ -233,6 +246,13 @@
 <div class="gp-trust"><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h17v17H3zM20 13h5l4 5v6h-9M3 24h3m14 0h2"/><circle cx="10" cy="24" r="3"/><circle cx="25" cy="24" r="3"/><path d="M1 12h9M1 16h6"/></svg></span><b>Szybka dostawa</b><small>1–2 dni robocze*</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 29 9v14l-13 7L3 23V9zM3 9l13 7 13-7M16 16v14M10 5l13 8"/></svg></span><b>14 dni</b><small>na zwrot</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 2 28 7v9c0 8-5 12-12 15C9 28 4 24 4 16V7z"/><path d="m10 16 4 4 8-9"/></svg></span><b>Bezpieczne</b><small>płatności</small></div><div class="gp-trust-item"><span class="gp-trust-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="9"/><path d="m11 20-2 10 7-4 7 4-2-10m-9-8 3 3 5-6"/></svg></span><b>Gwarancja</b><small>jakości</small></div></div>
 <section class="gp-section gp-tech gp-tech-v2" id="technologia"><div class="gp-kicker">POZNAJ ZRASZACZ GARDEN PRO</div><h2>Przemyślana konstrukcja,<br><em>realne korzyści</em> dla Twojego ogrodu</h2>
 <div class="gp-tech-stage">
+<svg class="gp-tech-guides" viewBox="0 0 1000 900" preserveAspectRatio="none" aria-hidden="true">
+<g fill="none" stroke="#82dc0b" stroke-width="2.5" stroke-linecap="round">
+<path d="M255 248 L337 392"/><path d="M746 248 L792 482"/>
+<path d="M258 650 L330 538"/><path d="M744 650 L602 540"/>
+<path d="M500 806 L870 495"/>
+</g>
+<g fill="#fff" stroke="#79d709" stroke-width="5"><circle cx="337" cy="392" r="10"/><circle cx="792" cy="482" r="10"/><circle cx="330" cy="538" r="10"/><circle cx="602" cy="540" r="10"/><circle cx="870" cy="495" r="10"/></g></svg>
 <div class="gp-tech-device"><img src="/assets/IMG_0680.webp" alt="Zraszacz GARDEN PRO — widok urządzenia" loading="lazy"></div>
 <div class="gp-callout gp-nozzles"><span class="gp-callout-icon"><img src="/assets/IMG_0687.webp" alt="" loading="lazy"></span><div><h3>Precyzyjne dysze</h3><p>Równomierny strumień na całej szerokości.</p></div></div>
 <div class="gp-callout gp-regulation"><span class="gp-callout-icon"><img src="/assets/IMG_0684.webp" alt="" loading="lazy"></span><div><h3>Regulacja zasięgu</h3><p>Dopasuj sposób podlewania do ogrodu.</p></div></div>
