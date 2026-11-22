@@ -272,6 +272,11 @@
 }
 .gp-tech-v2 .gp-tech-device::after{display:none!important}
 }
+
+/* 8.13 replacement clean product photo: remove all prior cropping and masking */
+.gp-tech-v2 .gp-tech-device img{clip-path:none!important;transform:none!important;object-fit:contain!important;object-position:center!important}
+.gp-tech-v2 .gp-tech-device::after,.gp-tech-v2 .gp-tech-device::before{display:none!important}
+@media(max-width:700px){.gp-tech-v2 .gp-tech-device img{clip-path:none!important;transform:none!important;object-fit:contain!important;object-position:center!important}.gp-tech-v2 .gp-tech-device::after,.gp-tech-v2 .gp-tech-device::before{display:none!important}}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
@@ -280,7 +285,7 @@
 <section class="gp-section gp-tech gp-tech-v2" id="technologia"><div class="gp-kicker">POZNAJ ZRASZACZ GARDEN PRO</div><h2>Przemyślana konstrukcja,<br><em>realne korzyści</em> dla Twojego ogrodu</h2>
 <div class="gp-tech-stage">
 <svg class="gp-tech-guides" aria-hidden="true" preserveAspectRatio="none"><g class="gp-guide-paths" fill="none" stroke="#80d90b" stroke-width="1.6" stroke-linecap="round"></g><g class="gp-guide-dots" fill="#fff" stroke="#80d90b" stroke-width="2.6"></g></svg>
-<div class="gp-tech-device"><img src="/assets/IMG_0680.webp" alt="Zraszacz GARDEN PRO — widok urządzenia" loading="lazy"></div>
+<div class="gp-tech-device"><img src="/assets/IMG_0701.jpeg" alt="Zraszacz GARDEN PRO — widok urządzenia" loading="lazy"></div>
 <div class="gp-callout gp-nozzles"><span class="gp-callout-icon"><img src="/assets/IMG_0687.webp" alt="" loading="lazy"></span><div><h3>Precyzyjne dysze</h3><p>Równomierny strumień na całej szerokości.</p></div></div>
 <div class="gp-callout gp-regulation"><span class="gp-callout-icon"><img src="/assets/IMG_0684.webp" alt="" loading="lazy"></span><div><h3>Regulacja zasięgu</h3><p>Dopasuj sposób podlewania do ogrodu.</p></div></div>
 <div class="gp-callout gp-base"><span class="gp-callout-icon"><img src="/assets/IMG_0686.webp" alt="" loading="lazy"></span><div><h3>Stabilna podstawa</h3><p>Pewne ustawienie na trawniku.</p></div></div>
