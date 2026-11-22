@@ -149,11 +149,29 @@
 .gp-steps{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important}.gp-steps article{padding:16px 5px!important}.gp-steps article img{width:70px;height:70px}.gp-steps article b{top:9px;left:calc(50% + 12px);width:26px;height:26px;font-size:14px}.gp-steps article h3{font-size:13px}.gp-steps article p{font-size:10px;line-height:1.3}
 .gp-offer{display:flex!important;flex-direction:column-reverse!important;gap:0!important;margin:12px 4% 38px!important;background:#03230f!important}.gp-offer-info{padding:24px 7% 18px!important}.gp-offer h2{font-size:23px}.gp-offer-image img{height:190px!important;min-height:0!important;display:block}.gp-old{font-size:23px}.gp-new{font-size:clamp(54px,13vw,76px)!important}.gp-offer-points{margin:18px 0!important}.gp-buy{box-shadow:0 5px 20px #8dff0040}
 }
+
+/* 8.3 HERO mobile alignment to approved mockup */
+@media(max-width:700px){
+.gp-hero{height:clamp(430px,125vw,550px)!important;overflow:hidden!important}
+.gp-hero-image{background-image:linear-gradient(180deg,rgba(0,14,7,.76) 0%,rgba(0,14,7,.50) 39%,rgba(0,14,7,.03) 75%),url('/assets/IMG_0681.webp')!important;background-size:cover!important;background-position:center 60%!important}
+.gp-hero-copy{padding:20px 6% 0!important;max-width:75%!important}
+.gp-hero .gp-kicker{font-size:9px!important;letter-spacing:.12em!important;line-height:1.3}
+.gp-hero h1{font-size:clamp(27px,7.1vw,36px)!important;line-height:1.01!important;letter-spacing:-.045em!important;text-transform:none!important;font-style:italic!important;margin:11px 0 12px!important}
+.gp-hero h1 em{text-transform:none!important;color:#a0ff00!important}
+.gp-hero p{font-size:clamp(11px,2.95vw,13px)!important;line-height:1.33!important;max-width:195px!important;margin:0 0 12px!important}
+.gp-hero .gp-outline{font-size:11px!important;padding:8px 13px!important;margin-top:0!important;border-width:1px!important;border-radius:40px!important}
+.gp-hero-badge{width:clamp(74px,21vw,92px)!important;top:5%!important;right:5%!important;font-size:9px!important;border-width:1.5px!important}
+.gp-hero-badge big{font-size:20px!important}
+.gp-trust{margin:-16px 4% 0!important;padding:14px 4px!important}
+.gp-trust span{font-size:19px!important}
+.gp-trust b{font-size:9px!important}
+}
+.gp-trust .gp-trust-icon{color:#159c2a;font-size:25px;line-height:1;background:transparent!important;border:0!important;display:inline!important}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
 <section class="gp-hero" id="start"><div class="gp-hero-copy"><div class="gp-kicker">ZRASZACZ OSZCZĘDZAJĄCY WODĘ</div><h1>Perfekcyjne<br>nawadnianie<br>trawnika<br><em>bez wysiłku.</em></h1><p>Poznaj wygodniejszy sposób podlewania ogrodu. Równomierny strumień, prosta regulacja i więcej czasu dla Ciebie.</p><a class="gp-outline" href="#dzialanie">▶ &nbsp; Zobacz, jak działa</a></div><div class="gp-hero-image" role="img" aria-label="Zraszacz GARDEN PRO podczas podlewania trawnika"></div><div class="gp-hero-badge"><span>💧</span><strong>Oszczędność<br>wody do<br><big>30%</big></strong></div></section>
-<div class="gp-trust"><span>🚚 <b>Szybka dostawa</b></span><span>↩ <b>14 dni na zwrot</b></span><span>♢ <b>Bezpieczne płatności</b></span><span>✓ <b>Wygodny zakup</b></span></div>
+<div class="gp-trust"><span><span class="gp-trust-icon" aria-hidden="true">♧</span> <b>Szybka dostawa</b></span><span><span class="gp-trust-icon" aria-hidden="true">⬡</span> <b>14 dni na zwrot</b></span><span><span class="gp-trust-icon" aria-hidden="true">♢</span> <b>Bezpieczne płatności</b></span><span><span class="gp-trust-icon" aria-hidden="true">♧</span> <b>Gwarancja jakości</b></span></div>
 <section class="gp-section gp-tech gp-tech-v2" id="technologia"><div class="gp-kicker">POZNAJ ZRASZACZ GARDEN PRO</div><h2>Przemyślana konstrukcja,<br><em>realne korzyści</em> dla Twojego ogrodu</h2>
 <div class="gp-tech-stage">
 <div class="gp-tech-device"><img src="/assets/IMG_0680.webp" alt="Zraszacz GARDEN PRO — widok urządzenia" loading="lazy"><i class="gp-pin pin-nozzles" aria-hidden="true"></i><i class="gp-pin pin-regulation" aria-hidden="true"></i><i class="gp-pin pin-base" aria-hidden="true"></i><i class="gp-pin pin-material" aria-hidden="true"></i><i class="gp-pin pin-connector" aria-hidden="true"></i></div>
