@@ -208,6 +208,24 @@
 .gp-tech-v2 .gp-connector .gp-callout-icon{flex:0 0 72px!important}
 .gp-tech-v2 .gp-demo-note{font-size:10px!important;line-height:1.35!important;text-align:center!important;margin:20px auto 0!important;color:#777!important;max-width:340px!important}
 }
+
+/* 8.6 technical section: whole product + precise connecting guides */
+@media(max-width:700px){
+.gp-tech-v2 .gp-tech-stage{gap:9px 10px!important}
+.gp-tech-v2 .gp-tech-device{height:clamp(155px,43vw,220px)!important;overflow:visible!important;isolation:isolate}
+.gp-tech-v2 .gp-tech-device img{width:100%!important;height:100%!important;max-height:none!important;object-fit:contain!important;object-position:center!important;background:#fff!important}
+.gp-tech-v2 .gp-callout{gap:3px!important}
+.gp-tech-v2 .gp-callout-icon{width:68px!important;height:68px!important;flex-basis:68px!important}
+.gp-tech-v2 .gp-connector{margin-top:0!important}
+.gp-tech-v2 .gp-tech-device:before,.gp-tech-v2 .gp-tech-device:after{content:'';position:absolute;z-index:3;pointer-events:none;width:7px;height:7px;border:2px solid #7bdd08;border-radius:50%;background:white;box-shadow:0 0 0 2px #fff}
+.gp-tech-v2 .gp-tech-device:before{top:25%;left:29%}
+.gp-tech-v2 .gp-tech-device:after{top:56%;right:13%}
+.gp-tech-v2 .gp-nozzles:after,.gp-tech-v2 .gp-regulation:after,.gp-tech-v2 .gp-base:after,.gp-tech-v2 .gp-material:after{display:block!important;content:''!important;position:absolute!important;z-index:2!important;pointer-events:none!important;background:#83df09!important;height:1.5px!important;width:clamp(22px,8vw,45px)!important;left:auto!important;top:auto!important;transform-origin:center!important}
+.gp-tech-v2 .gp-nozzles:after{right:3%!important;bottom:-12px!important;transform:rotate(55deg)!important}
+.gp-tech-v2 .gp-regulation:after{left:3%!important;bottom:-12px!important;transform:rotate(-55deg)!important}
+.gp-tech-v2 .gp-base:after{right:5%!important;top:-10px!important;transform:rotate(-50deg)!important}
+.gp-tech-v2 .gp-material:after{left:5%!important;top:-10px!important;transform:rotate(50deg)!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
