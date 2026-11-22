@@ -95,6 +95,20 @@
 .hero{background-image:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.22) 72%),url('/assets/hero-garden.jpg')!important;background-color:#143018!important;background-size:cover!important;background-position:center 55%!important}
 @media(max-width:700px){.hero{background-image:linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.7) 30%,rgba(0,0,0,.16) 76%),url('/assets/hero-garden.jpg')!important;background-position:50% center!important}.hero-content{position:relative;z-index:2}}
 .product-image.photo{background-color:#244524!important;background-size:cover!important;background-position:center!important}
+
+/* 6.8 mobile card geometry: force widths and prevent clipped images/buttons */
+@media(max-width:700px){
+#produkty .products-layout,#produkty #featured,.dark-section .product-list{width:100%!important;max-width:100%!important;min-width:0!important}
+#featured .product,.dark-section .dark-card{display:grid!important;grid-template-columns:minmax(0,43%) minmax(0,57%)!important;width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden!important;min-height:154px!important}
+#featured .product .product-image,.dark-section .dark-card .product-image{width:100%!important;min-width:0!important;max-width:100%!important;height:100%!important;min-height:154px!important;overflow:hidden!important}
+#featured .product .product-body,.dark-section .dark-card .detail{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;padding:13px 12px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:stretch!important}
+#featured .product h3,.dark-section .dark-card h3{font-size:clamp(13px,3.7vw,16px)!important;line-height:1.16!important;overflow-wrap:anywhere!important;margin:0 0 6px!important}
+#featured .product p,.dark-section .dark-card p{font-size:clamp(10px,2.7vw,12px)!important;line-height:1.32!important;min-height:0!important;flex:0 0 auto!important;margin:0 0 8px!important;overflow-wrap:anywhere!important}
+#featured .product .price,.dark-section .dark-card .price{font-size:clamp(16px,4.6vw,21px)!important;margin:0 0 8px!important}
+#featured .product .buy{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;white-space:nowrap!important;padding:10px 3px!important;font-size:clamp(10px,2.8vw,12px)!important;line-height:1.1!important}
+.dark-section .dark-card .circle{align-self:flex-end!important;flex:0 0 34px!important;width:34px!important;height:34px!important}
+#featured .product .pack,.dark-section .dark-card .pack{max-width:85%!important;transform:scale(.65)!important;transform-origin:center!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#produkty">Produkty</a><a href="#efekty">Efekty</a><a href="#dlaczego">Dlaczego my</a><a href="#stosowanie">Jak stosować</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#produkty" onclick="toggleMenu()">Produkty</a><a href="#efekty" onclick="toggleMenu()">Efekty</a><a href="#dlaczego" onclick="toggleMenu()">Dlaczego my</a><a href="#stosowanie" onclick="toggleMenu()">Jak stosować</a></div></header>
 <main><section class="hero"><div class="hero-content"><div class="eyebrow">PROFESJONALNA PIELĘGNACJA TRAWNIKA</div><h1>PERFEKCYJNY<br>TRAWNIK<br><em>ZACZYNA SIĘ TUTAJ.</em></h1><p>Regeneracja, gęsta zieleń i trwała odporność<br>Twojego trawnika – w prosty i skuteczny sposób.</p><a href="#produkty" class="cta">ODKRYJ PRODUKTY <span>⟶</span></a></div></section>
