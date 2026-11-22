@@ -253,6 +253,9 @@
 
 /* 8.9 hide unwanted green strip in source product photo; avoid label overlap */
 @media(max-width:700px){.gp-tech-v2 .gp-tech-device{position:relative!important}.gp-tech-v2 .gp-tech-device:after{content:''!important;display:block!important;position:absolute!important;left:0!important;right:0!important;top:0!important;height:7px!important;background:#fff!important;z-index:2!important;pointer-events:none!important}.gp-tech-v2 .gp-tech-guides{z-index:3!important}.gp-tech-v2 .gp-callout{z-index:4!important}}
+
+/* 8.10 remove embedded green grass strip at the upper edge of the product image */
+@media(max-width:700px){.gp-tech-v2 .gp-tech-device{background:#fff!important;overflow:hidden!important}.gp-tech-v2 .gp-tech-device img{clip-path:inset(14px 0 0 0)!important}.gp-tech-v2 .gp-tech-device:after{display:none!important}}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
