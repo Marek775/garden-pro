@@ -373,6 +373,27 @@
 .gp-how-v3 .gp-steps article p{font-size:clamp(9px,2.3vw,10px)!important;line-height:1.17!important}
 .gp-how-v3 .gp-steps article:not(:last-child)::after{right:-13px!important;top:41%!important;font-size:24px!important}
 }
+
+/* 8.18 product specifications: compact premium mobile layout */
+.gp-spec{max-width:1120px!important;margin:0 auto!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;gap:40px!important;align-items:center!important;padding:50px 5%!important}
+.gp-spec .gp-kicker{font-size:11px!important;letter-spacing:.23em!important;margin-bottom:12px!important}
+.gp-spec h2{font-size:clamp(30px,3.6vw,43px)!important;line-height:1.08!important;margin:0 0 13px!important;letter-spacing:-.035em!important}
+.gp-spec>div>p{font-size:14px!important;line-height:1.55!important;color:#515b50!important;max-width:430px!important;margin:0!important}
+.gp-spec dl{background:#f7faf5!important;border:1px solid #e5ecdf!important;border-radius:18px!important;padding:9px 20px!important;margin:0!important}
+.gp-spec dl div{display:grid!important;grid-template-columns:42% minmax(0,1fr)!important;align-items:center!important;gap:12px!important;padding:13px 0!important;font-size:13px!important;border-bottom:1px solid #e1e7dd!important}
+.gp-spec dl div:last-child{border-bottom:0!important}
+.gp-spec dt{font-weight:800!important}
+.gp-spec dd{font-weight:600!important;color:#334334!important;text-align:right!important;overflow-wrap:anywhere}
+@media(max-width:700px){
+.gp-spec{display:block!important;padding:27px 5% 30px!important}
+.gp-spec .gp-kicker{font-size:10px!important;letter-spacing:.19em!important;margin-bottom:8px!important}
+.gp-spec h2{font-size:clamp(26px,7vw,33px)!important;margin-bottom:9px!important;max-width:330px!important}
+.gp-spec>div>p{font-size:12px!important;line-height:1.4!important;margin:0 0 17px!important}
+.gp-spec dl{padding:5px 13px!important;border-radius:15px!important}
+.gp-spec dl div{grid-template-columns:41% minmax(0,1fr)!important;gap:9px!important;padding:12px 0!important;font-size:11px!important;line-height:1.25!important}
+.gp-spec dt{font-size:11px!important}
+.gp-spec dd{font-size:11px!important}
+}
 </style></head><body>
 <header class="top"><a href="#" class="logo"><span class="leaf">✦</span>GARDEN<span>PRO</span></a><nav class="nav"><a href="#technologia">Zraszacz</a><a href="#korzysci">Korzyści</a><a href="#kroki">Jak działa</a><a href="#specyfikacja">Specyfikacja</a><a href="#oferta">Oferta</a></nav><div class="actions"><button class="iconbtn" aria-label="Otwórz koszyk" onclick="openCart()">🛒<span class="badge" id="badge">0</span></button><button class="iconbtn menu" aria-label="Menu" onclick="toggleMenu()">☰</button></div><div class="mobile-nav" id="mobileNav" hidden aria-hidden="true"><a href="#technologia" onclick="toggleMenu()">Zraszacz</a><a href="#korzysci" onclick="toggleMenu()">Korzyści</a><a href="#kroki" onclick="toggleMenu()">Jak działa</a><a href="#specyfikacja" onclick="toggleMenu()">Specyfikacja</a><a href="#oferta" onclick="toggleMenu()">Oferta</a></div></header>
 <main class="landing">
